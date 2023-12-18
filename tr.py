@@ -68,7 +68,7 @@ def logo():
  [•] Status    :   Free
  [•] Tool      :   Free 
  [•] Facebook  :   Ishmum Sarker Siam
- [•] Version   :  \033[1;32m 2.9\033[1;32m \033[1;37m
+ [•] Version   :  \033[1;32m 3.0\033[1;32m \033[1;37m
 ---------------------------------------------------''')
 	p(logo)
 def clear():
